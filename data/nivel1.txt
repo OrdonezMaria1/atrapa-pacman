@@ -1,0 +1,11 @@
+#Nivel
+1
+#radio posX posY espera direccion rebotes
+30	20	20	5	IZQUIERDA	0	false
+30	30	30	6	DERECHA	0	false
+40	60	60	7	ARRIBA	0	false
+40	70	70	8	ABAJO	0	false
+50	200	200	9	IZQUIERDA	0	false
+50	210	210	10	DERECHA	0	false
+60	300	300	11	ARRIBA	0	false
+60	310	310	12	ABAJO	0	false

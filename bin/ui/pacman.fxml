@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PacmanController">
+   <children>
+      <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="454.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+                  <Menu mnemonicParsing="false" text="Cargar Juego">
+                    <items>
+                    <MenuItem fx:id="nivel00" mnemonicParsing="false" onAction="#cargarNivel00" text="Nivel 0" />
+                      <MenuItem fx:id="nivel01" mnemonicParsing="false" onAction="#cargarNivel01" text="Nivel 1" />
+                        <MenuItem fx:id="nivel02" mnemonicParsing="false" onAction="#cargarNivel02" text="Nivel 2" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="guardarJuego" mnemonicParsing="false" onAction="#guardarJuegoM" text="Guardar Juego" />
+                  <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#salirM" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ver">
+            <items>
+              <MenuItem fx:id="mejorJugador" mnemonicParsing="false" onAction="#mejorJugador" text="Mejores Puntajes" />
+                  <MenuItem fx:id="acercaJuego" mnemonicParsing="false" onAction="#acercaJuegoM" text="Acerca del Juego" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="14.0" layoutY="34.0" prefHeight="26.0" prefWidth="68.0" text="Rebotes:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="contadorRepotes" layoutX="74.0" layoutY="34.0" prefHeight="26.0" prefWidth="68.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

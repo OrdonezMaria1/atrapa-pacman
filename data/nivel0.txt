@@ -1,0 +1,7 @@
+#Nivel
+0
+#radio posX posY espera direccion rebotes
+20	200	200	0	IZQUIERDA	0	false	
+20	200	200	0	DERECHA	0	false
+20	200	200	0	ARRIBA	0	false
+20	200	200	0	ABAJO	0	false
